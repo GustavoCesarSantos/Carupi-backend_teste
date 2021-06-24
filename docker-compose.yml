@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=carupi
+      - MONGO_INITDB_ROOT_PASSWORD=carupi
+    ports:
+      - "27017:27017"
