@@ -3,7 +3,7 @@ const listCarDao = require('./ListCarDao');
 
 class ListCarService {
   async execute(carId) {
-    await listCarDao.list(carId);
+    return listCarDao.list(carId);
   }
 }
 

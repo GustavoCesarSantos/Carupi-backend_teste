@@ -3,7 +3,7 @@ const carSchema = require('../../../database/schemas/Cars');
 
 class ListCarDao {
   async list(carId) {
-    return await carSchema.findById(carId);
+    return carSchema.findById({ _id: carId });
   }
 }
 
