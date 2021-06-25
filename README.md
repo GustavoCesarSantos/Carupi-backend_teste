@@ -18,7 +18,6 @@ API tem foco em auxiliar no cadastro, listagem, atualização e deleção de car
 # __Configuração para Desenvolvimento__
 
 #### __Necessario configurar arquivo .env__
-```
 
 #### __Instalar as dependencias com__:
 ```
