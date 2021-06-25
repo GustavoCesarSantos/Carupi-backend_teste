@@ -1,11 +1,14 @@
 /* eslint-disable class-methods-use-this */
+const Car = require('../requestModel/carModel');
 const deleteCarService = require('./DeleteCarService');
 
 class DeleteCarController {
   async handle(req, res) {
-    const { id } = req.params;
+    const carModel = new Car({ ...req.params });
 
-    await deleteCarService.execute(id);
+    await carModel.isAValidCar();
+
+    await deleteCarService.execute(carModel.id);
 
     res.status(204).end();
   }
