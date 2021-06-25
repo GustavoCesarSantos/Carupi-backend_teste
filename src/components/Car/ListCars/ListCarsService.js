@@ -2,8 +2,8 @@
 const listCarsDao = require('./ListCarsDao');
 
 class ListCarsService {
-  async execute() {
-    await listCarsDao.lists();
+  async execute(query) {
+    return listCarsDao.lists(query);
   }
 }
 

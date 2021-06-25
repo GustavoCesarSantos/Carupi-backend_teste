@@ -2,8 +2,8 @@
 const carSchema = require('../../../database/schemas/Cars');
 
 class ListCarsDao {
-  async lists() {
-    return await carSchema.find();
+  async lists(query) {
+    return carSchema.find(query);
   }
 }
 
