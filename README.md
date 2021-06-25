@@ -10,6 +10,8 @@ API tem foco em auxiliar no cadastro, listagem, atualização e deleção de car
 - NodeJs
 - Express
 - Joi
+- Jest
+- Eslint
 - Mongoose
 
 
@@ -20,9 +22,19 @@ API tem foco em auxiliar no cadastro, listagem, atualização e deleção de car
 npm install 
 ```
 
+#### __subir container com a imagem do DB usado__:
+```
+docker-compose up
+```
+
 #### __Para iniciar a aplicação__:
 ```
 npm run dev
+```
+
+#### __Para iniciar os testes da aplicação__:
+```
+npm run test
 ```
 
 # __Consumo da Api__
