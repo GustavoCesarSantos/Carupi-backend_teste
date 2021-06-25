@@ -9,6 +9,8 @@ const options = {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
+  user: process.env.DBUSER,
+  pass: process.env.DBPASSWORD,
 };
 
 describe('Update car test unit', () => {

@@ -7,6 +7,8 @@ const listCarDao = require('../ListCarDao');
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  user: process.env.DBUSER,
+  pass: process.env.DBPASSWORD,
 };
 
 describe('List car test unit', () => {
